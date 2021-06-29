@@ -2,7 +2,7 @@
 @import "./fonts";
 
 .section {
-  padding: 45px 0 0;
+  padding: 45px 0 15px;
 
   &__title {
     @include font-base(2.25rem, 600, 1);

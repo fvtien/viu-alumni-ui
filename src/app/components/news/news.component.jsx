@@ -17,7 +17,7 @@ const News = () => {
         <div className="row">
           {mockNews.map(item => (
             <div key={item.news_id} className="col--12 col__md--4 news__item">
-              <Link to={item.link}>
+              <Link to={`/news/${item.news_id}`}>
                 <div className="news__image">
                   <img
                     className="img-fluid"
@@ -28,7 +28,7 @@ const News = () => {
               </Link>
               <div className="news__text">
                 <h3 className="news__title font-title">
-                  <Link to={item.link}>{item.title}</Link>
+                  <Link to={`/news/${item.news_id}`}>{item.title}</Link>
                 </h3>
                 <div className="news__description font-description">
                   <p>{item.description}</p>
