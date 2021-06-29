@@ -1,0 +1,29 @@
+.form-search {
+  display: flex;
+  padding: 15px 0;
+  > *,
+  .ant-select-selector,
+  .ant-input-affix-wrapper {
+    height: 38px !important;
+  }
+
+  .ant-select-single {
+    .ant-select-selector {
+      .ant-select-selection-item,
+      .ant-select-selection-placeholder {
+        line-height: 38px !important;
+      }
+    }
+  }
+
+  .ant-form-item {
+    margin-right: 5px;
+    height: 38px !important;
+
+    &:first-child {
+      flex: 2 1;
+    }
+
+    flex: 1 1;
+  }
+}

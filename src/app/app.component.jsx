@@ -5,6 +5,8 @@ import "./styles/app.scss";
 import HomePage from "@/app/modules/home";
 import NewsPage from "@/app/modules/news";
 import NewsItemPage from "@/app/modules/news-item";
+import JobPage from "./modules/job";
+import JobItemPage from "./modules/job-item";
 
 const App = () => {
   return (
@@ -19,6 +21,12 @@ const App = () => {
           </Route>
           <Route path="/news/:newsId">
             <NewsItemPage />
+          </Route>
+          <Route exact path="/job">
+            <JobPage />
+          </Route>
+          <Route path="/job/:jobId">
+            <JobItemPage />
           </Route>
         </Switch>
       </Router>

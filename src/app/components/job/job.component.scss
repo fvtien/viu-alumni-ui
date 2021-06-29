@@ -6,8 +6,8 @@
     margin-bottom: 20px;
 
     > .row {
-      min-height: 214px;
-      max-height: 214px;
+      min-height: 234px;
+      max-height: 234px;
       margin-right: 1px;
       margin-left: 0;
       padding-top: 15px;
@@ -27,7 +27,7 @@
   &__title {
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     margin-bottom: 0.4em;
