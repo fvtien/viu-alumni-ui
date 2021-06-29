@@ -239,13 +239,14 @@ const menuData = [
       },
     ],
   },
-  { id: "3", name: "Tin tức - Sự kiện" },
+  { id: "3", name: "Tin tức - Sự kiện", link: "/news" },
   {
     id: "4",
     name: "Cựu sinh viên",
+    link: "/alumni",
   },
-  { id: "5", name: "Việc làm - Tuyển dụng" },
-  { id: "6", name: "Liên hệ" },
+  { id: "5", name: "Việc làm - Tuyển dụng", link: "/job" },
+  { id: "6", name: "Liên hệ", link: "/contact" },
 ];
 
 export const loadMenu = () => Promise.resolve(menuData);

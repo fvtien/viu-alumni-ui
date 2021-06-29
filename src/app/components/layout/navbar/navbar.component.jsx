@@ -13,7 +13,10 @@ const buildMenu = function buildMenu(items) {
     <ul className="menu">
       {items.map(item => (
         <li key={item.id} className="menu__item">
-          <Link to={"/"} className="menu__link">
+          <Link
+            to={item.link !== undefined ? item.link : `/post/${item.id}`}
+            className="menu__link"
+          >
             {item.name}
           </Link>
           {item.children && item.children.length > 0
