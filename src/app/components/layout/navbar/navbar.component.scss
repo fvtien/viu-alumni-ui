@@ -29,7 +29,7 @@
       font-family: "Newsreader", serif;
       display: flex;
       align-items: center;
-      color: #000;
+      color: $black;
     }
   }
 }
@@ -37,19 +37,25 @@
 .menu-wrap {
   flex: 1 1 90%;
   transition: all 0.5s ease-in-out;
+
+  > .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .menu {
   margin: 0;
   padding: 0;
-  width: 100%;
   list-style: none;
+  z-index: 1000;
 
   &__item {
     position: relative;
     white-space: nowrap;
 
-    &:hover > .sub-menu {
+    &:hover > .menu {
       display: block;
     }
   }
@@ -80,37 +86,39 @@
   }
 }
 
-.sub-menu {
-  list-style: none;
-  position: absolute;
-  display: none;
-  top: 100%;
-  min-width: 179.83px;
-  box-shadow: 0 3px 10px #00000013;
-  background: $white;
+.menu {
+  .menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    top: 100%;
+    min-width: 179.83px;
+    box-shadow: 0 3px 10px #00000013;
+    background: $white;
 
-  .menu__link {
-    padding: 13px;
+    .menu__link {
+      padding: 13px;
 
-    &:hover {
-      background: #cccccc;
+      &:hover {
+        background: #cccccc;
 
-      &::after {
-        width: 0;
+        &::after {
+          width: 0;
+        }
       }
     }
-  }
 
-  .sub-menu {
-    top: 0;
-    left: 100%;
-    width: 400px;
+    .menu {
+      top: 0;
+      left: 100%;
+      width: 400px;
 
-    .menu__item {
-      white-space: normal;
-      float: left;
-      width: 50%;
-      margin: 0;
+      .menu__item {
+        white-space: normal;
+        float: left;
+        width: 50%;
+        margin: 0;
+      }
     }
   }
 }
