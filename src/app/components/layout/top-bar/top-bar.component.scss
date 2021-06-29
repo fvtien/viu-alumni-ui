@@ -1,0 +1,37 @@
+@import "@/app/styles/variables";
+
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background: $color-primary;
+
+  &__info {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  &__user {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 10px 32px;
+    font-size: 12px;
+    color: $white;
+    background: #1a2e52;
+
+    &:hover {
+      background: #182744;
+    }
+  }
+}

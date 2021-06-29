@@ -1,0 +1,20 @@
+@import "./variables";
+@import "./fonts";
+
+.section {
+  padding: 45px 0 0;
+
+  &__title {
+    @include font-base(2.25rem, 600, 1);
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -1px;
+    color: $color-primary;
+    margin: 0 0 30px;
+  }
+}
+
+.text-black {
+  color: $black;
+}

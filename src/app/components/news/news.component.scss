@@ -1,0 +1,41 @@
+@import "@/app/styles/variables";
+
+.news {
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    img {
+      max-height: 192px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0.4em;
+
+    a {
+      color: $black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
