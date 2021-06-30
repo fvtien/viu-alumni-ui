@@ -6,6 +6,7 @@ import { mockJob } from "../mock/mock_job";
 
 const JobItem = () => {
   const { jobId } = useParams();
+  // eslint-disable-next-line eqeqeq
   const jobItem = mockJob.find(job => job.job_id == jobId);
 
   return (
