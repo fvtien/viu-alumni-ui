@@ -243,7 +243,7 @@ const menuData = [
   {
     id: "4",
     name: "Cựu sinh viên",
-    link: "/alumni",
+    link: "/user",
   },
   { id: "5", name: "Việc làm - Tuyển dụng", link: "/job" },
   { id: "6", name: "Liên hệ", link: "/contact" },

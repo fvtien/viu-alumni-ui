@@ -7,6 +7,8 @@ import NewsPage from "@/app/modules/news";
 import NewsItemPage from "@/app/modules/news-item";
 import JobPage from "./modules/job";
 import JobItemPage from "./modules/job-item";
+import UserPage from "./modules/user";
+import UserItemPage from "./modules/user-item";
 
 const App = () => {
   return (
@@ -27,6 +29,12 @@ const App = () => {
           </Route>
           <Route path="/job/:jobId">
             <JobItemPage />
+          </Route>
+          <Route exact path="/user">
+            <UserPage />
+          </Route>
+          <Route path="/user/:userId">
+            <UserItemPage />
           </Route>
         </Switch>
       </Router>
