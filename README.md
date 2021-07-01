@@ -1,5 +1,7 @@
 # VIU Alumni UI
 
+user account: username: 1000123 | password: $Tien2021
+
 # Api: [https://github.com/fvtien/viu-alumni.git](https://github.com/fvtien/viu-alumni.git)
 
 ## Available Scripts
