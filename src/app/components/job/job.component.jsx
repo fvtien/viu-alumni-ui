@@ -31,7 +31,7 @@ const Job = ({ job }) => {
                 </h3>
                 <div className="d-flex justify-content-between">
                   <div className="job__location">
-                    <AimOutlined /> Hà Nội
+                    <AimOutlined /> {item.zone}
                   </div>
                   <div className="job__salary">
                     <DollarOutlined /> {item.salary_min} - {item.salary_max}

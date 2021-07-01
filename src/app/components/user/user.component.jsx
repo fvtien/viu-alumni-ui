@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import { Table, Input, Button, Space } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
@@ -209,7 +210,7 @@ const User = () => {
     {
       dataIndex: "user_id",
       key: "user_id",
-      render: user_id => <a href={`/user/${user_id}`}>Xem</a>,
+      render: user_id => <Link to={`/user/${user_id}`}>Xem</Link>,
     },
   ];
 

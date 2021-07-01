@@ -42,7 +42,7 @@ const JobPage = () => {
         );
       }
       if (keyword !== undefined && zone === undefined) {
-        return item.job_name.toLowerCase().indexOf(keyword.toLowerCase());
+        return item.job_name.toLowerCase().indexOf(keyword.toLowerCase()) != -1;
       }
       if (keyword === undefined && zone !== undefined) {
         return item.zone == zone;
