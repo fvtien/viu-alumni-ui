@@ -1,0 +1,106 @@
+.login-page {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+
+  &__bg {
+    position: relative;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../../assets/images/bg-viu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__carousel {
+    width: 80%;
+    max-width: 500px;
+    position: absolute;
+    bottom: 30px;
+    * {
+      border-radius: 20px;
+    }
+    .banner__item {
+      height: 200px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f4f7f6;
+
+    &__btn {
+      width: 100%;
+      height: auto;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      font-size: 16px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &__logo {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+    img {
+      border-radius: 35px 15px;
+    }
+  }
+
+  &__title {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 40px;
+  }
+
+  .ant-input-affix-wrapper {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-page {
+    flex-direction: column;
+
+    &__title {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+
+    &__form {
+      padding-top: 1rem;
+    }
+
+    &__inner {
+      width: 85%;
+    }
+
+    &__carousel {
+      bottom: 7px;
+    }
+
+    .banner__item {
+      height: 110px;
+    }
+  }
+}

@@ -33,6 +33,7 @@ const JobPage = () => {
   const handleChange = () => {
     const keyword = form.getFieldValue("keyword");
     const zone = form.getFieldValue("zone");
+    // eslint-disable-next-line array-callback-return
     const filteredValue = mockJob.filter(item => {
       if (keyword !== undefined && zone !== undefined) {
         return (

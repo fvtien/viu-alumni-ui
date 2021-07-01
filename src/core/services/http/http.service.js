@@ -41,6 +41,7 @@ export class HttpService {
         const value = options.queryParams[key];
         if (value !== undefined) {
           if (Array.isArray(value)) {
+            // eslint-disable-next-line no-loop-func
             value.forEach(v => {
               queryString += `${key}=${v}&`;
             });
@@ -65,7 +66,7 @@ export class HttpService {
         ...options?.headers,
       },
     }).pipe(
-      map(ajaxResponse => this.handleResponse < T > ajaxResponse),
+      map(ajaxResponse => this.handleResponse(ajaxResponse)),
       catchError(error => {
         this.onError$.next(error);
         return throwError(() => error);

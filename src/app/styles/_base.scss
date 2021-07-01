@@ -6,6 +6,10 @@ body {
   line-height: 1.5;
 }
 
+img {
+  max-width: 100%;
+}
+
 .img-fluid {
   object-fit: cover;
   object-position: center;

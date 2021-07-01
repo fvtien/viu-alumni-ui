@@ -213,7 +213,7 @@ const User = () => {
     },
   ];
 
-  return <Table dataSource={mockUser} columns={columns} />;
+  return <Table rowKey="user_id" dataSource={mockUser} columns={columns} />;
 };
 
 export default User;

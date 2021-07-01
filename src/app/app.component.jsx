@@ -9,6 +9,7 @@ import JobPage from "./modules/job";
 import JobItemPage from "./modules/job-item";
 import UserPage from "./modules/user";
 import UserItemPage from "./modules/user-item";
+import LoginPage from "./modules/login";
 
 const App = () => {
   return (
@@ -35,6 +36,9 @@ const App = () => {
           </Route>
           <Route path="/user/:userId">
             <UserItemPage />
+          </Route>
+          <Route path="/login">
+            <LoginPage />
           </Route>
         </Switch>
       </Router>
